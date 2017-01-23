@@ -1,0 +1,19 @@
+<h1>New Post</h1>
+ <div>
+   <label>Enter Post Title:</label>
+   <input #newTitle>
+ </div>
+ <div>
+ <div>
+   <label>Enter Post author:</label>
+   <input #newAuthor>
+ </div>
+ <div>
+   <label>Enter Post Content:</label>
+   <input #newContent>
+ </div>
+ <div>
+   <label>Enter Post Image URL:</label>
+   <input #newImage>
+ </div>
+ <button (click)="submitForm(newTitle.value, newAuthor.value, newContent.value, newImage.value)">Add</button>
